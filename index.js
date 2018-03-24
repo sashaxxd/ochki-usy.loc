@@ -1,4 +1,6 @@
-   
+function play(){
+    $('#music').html('<embed src="sound/Sound_18594.mp3" type="audio/mp3"><noembed><bgsound="music.mp3"></noembed>')
+};
    $(document).ready(function()
    {
       var jQuerySlider1Options =
@@ -13,6 +15,7 @@
       $("#jQuerySlider1").slider(jQuerySlider1Options);
        $("#jQuerySlider1").bind('slide', function(event, ui)
        {
+
            var x = ui.value;
            $("#ochki")
                .css({left: x});

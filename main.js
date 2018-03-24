@@ -7,6 +7,7 @@
 
 $("#Checkbox1").change(function() {
     if(this.checked) {
+
         $("#ochki").show()
 
             .css({'position' : 'absolute', 'z-index' : '999999999999999999999', top: 0, left: 0})
@@ -95,3 +96,13 @@ $("#Button_download").click(function() {
         }
     });
 });
+
+
+// $("#Button_add").click(function() {
+//     play();
+// });
+
+
+function play(){
+    $('#music').html('<embed src="sound/Sound_18594.mp3" type="audio/mp3"><noembed><bgsound="music.mp3"></noembed>')
+};
